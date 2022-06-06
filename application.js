@@ -9,7 +9,6 @@ const users = [];
 
 const authenticate = (request, response, next) => {
 	const token = request.headers.authorization;
-
 	if (!token) {
 		response.status(403).send('Authorization token missing');
 	} else {
